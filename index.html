@@ -98,6 +98,28 @@
       will-change:transform;
     }
     .play-badge:hover{transform:translateY(-2px)}
+
+    .steam-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      text-decoration:none;
+      background:#171a21;
+      color:#fff;
+      border-radius:12px;
+      padding:10px 14px;
+      font-weight:700;
+      transition:transform .15s ease, background .15s ease;
+      will-change:transform;
+    }
+    .steam-badge:hover{
+      transform:translateY(-2px);
+      background:#1b2838;
+    }
+    .steam-badge small{display:block;font-weight:600;opacity:.85}
+    .steam-badge strong{display:block;font-size:1.05rem;line-height:1.1}
+    .steam-icon{width:28px;height:28px;flex:0 0 28px}
+
     .play-badge-disabled{
       opacity:.75;
     }
@@ -282,6 +304,66 @@
 
       <hr class="divider" />
 
+      <section class="game-block" id="deepcorp-rescue">
+        <div class="game-head">
+          <div>
+            <h2 class="game-title">🚀 DeepCorp Rescue</h2>
+            <p class="game-description">
+              Rescue survivors, recover valuables, and complete dangerous missions deep underground.
+            </p>
+          </div>
+
+          <div class="game-actions">
+            <a class="pill" href="./privacy_policy_deepcorp.txt">Privacy Policy</a>
+            <!-- Replace this href with the real DeepCorp Rescue Google Play URL later -->
+            <a class="play-badge"
+               href="https://play.google.com/store/apps/details?id=com.green_fridge.deepcorp"
+               title="DeepCorp Rescue Google Play link coming soon">
+              <svg class="play-icon" viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M10 8v48l44-24L10 8z" fill="#00d2ff"></path>
+                <path d="M10 8l28 28L10 36V8z" fill="#00ff7b" opacity="0.85"></path>
+                <path d="M10 36l28 0L10 56V36z" fill="#ffd400" opacity="0.9"></path>
+                <path d="M38 36l16-4-16-4v8z" fill="#ff4b4b" opacity="0.9"></path>
+              </svg>
+              <span>
+                <small>Get it on</small>
+                <strong>Google Play</strong>
+              </span>
+            </a>
+
+            <a class="steam-badge"
+               href="https://store.steampowered.com/app/5063860/"
+               target="_blank" rel="noopener"
+               title="Get DeepCorp Rescue on Steam">
+              <img class="steam-icon" src="steam.png" alt="" aria-hidden="true" />
+              <span>
+                <small>Get it on</small>
+                <strong>Steam</strong>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <a class="shot-link" href="screenshot4.png" data-full="screenshot4.png" aria-label="Open DeepCorp Rescue screenshot 1">
+            <div class="shot"><img src="screenshot4.png" alt="DeepCorp Rescue gameplay screenshot 1" /></div>
+          </a>
+
+          <a class="shot-link" href="screenshot5.png" data-full="screenshot5.png" aria-label="Open DeepCorp Rescue screenshot 2">
+            <div class="shot"><img src="screenshot5.png" alt="DeepCorp Rescue gameplay screenshot 2" /></div>
+          </a>
+
+          <a class="shot-link" href="screenshot6.png" data-full="screenshot6.png" aria-label="Open DeepCorp Rescue screenshot 3">
+            <div class="shot"><img src="screenshot6.png" alt="DeepCorp Rescue gameplay screenshot 3" /></div>
+          </a>
+        </div>
+
+        <div class="hint">Tip: Click a screenshot to view it larger.</div>
+      </section>
+
+
+      <hr class="divider" />
+
       <section class="game-block" id="pop-the-can">
         <div class="game-head">
           <div>
@@ -324,55 +406,6 @@
           </a>
         </div>
       </section>
-
-      <hr class="divider" />
-
-      <section class="game-block" id="deepcorp-rescue">
-        <div class="game-head">
-          <div>
-            <h2 class="game-title">🚀 DeepCorp Rescue</h2>
-            <p class="game-description">
-              Rescue survivors, recover valuables, and complete dangerous missions deep underground.
-            </p>
-          </div>
-
-          <div class="game-actions">
-            <a class="pill" href="./privacy_policy_deepcorp.txt">Privacy Policy</a>
-            <!-- Replace this href with the real DeepCorp Rescue Google Play URL later -->
-            <a class="play-badge"
-               href="https://play.google.com/store/apps/details?id=com.green_fridge.deepcorp"
-               title="DeepCorp Rescue Google Play link coming soon">
-              <svg class="play-icon" viewBox="0 0 64 64" aria-hidden="true">
-                <path d="M10 8v48l44-24L10 8z" fill="#00d2ff"></path>
-                <path d="M10 8l28 28L10 36V8z" fill="#00ff7b" opacity="0.85"></path>
-                <path d="M10 36l28 0L10 56V36z" fill="#ffd400" opacity="0.9"></path>
-                <path d="M38 36l16-4-16-4v8z" fill="#ff4b4b" opacity="0.9"></path>
-              </svg>
-              <span>
-                <small>Get it on</small>
-                <strong>Google Play</strong>
-              </span>
-            </a>
-          </div>
-        </div>
-
-        <div class="gallery">
-          <a class="shot-link" href="screenshot4.png" data-full="screenshot4.png" aria-label="Open DeepCorp Rescue screenshot 1">
-            <div class="shot"><img src="screenshot4.png" alt="DeepCorp Rescue gameplay screenshot 1" /></div>
-          </a>
-
-          <a class="shot-link" href="screenshot5.png" data-full="screenshot5.png" aria-label="Open DeepCorp Rescue screenshot 2">
-            <div class="shot"><img src="screenshot5.png" alt="DeepCorp Rescue gameplay screenshot 2" /></div>
-          </a>
-
-          <a class="shot-link" href="screenshot6.png" data-full="screenshot6.png" aria-label="Open DeepCorp Rescue screenshot 3">
-            <div class="shot"><img src="screenshot6.png" alt="DeepCorp Rescue gameplay screenshot 3" /></div>
-          </a>
-        </div>
-
-        <div class="hint">Tip: Click a screenshot to view it larger.</div>
-      </section>
-
 
       <hr class="divider" />
 
